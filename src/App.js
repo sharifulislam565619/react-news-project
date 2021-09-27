@@ -27,7 +27,9 @@ function App() {
           <Row xs={1} md={3} className="g-4 m-3">
 
             {
-              news.map(data => <Cart data={data}></Cart>)
+              news.map(data => <Cart
+                key={data.publishedAt}
+                data={data}></Cart>)
             }
 
           </Row>
