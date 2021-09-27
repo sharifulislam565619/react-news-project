@@ -11,7 +11,7 @@ function App() {
   const [news, setNews] = useState([])
 
   useEffect(() => {
-    fetch("https://newsapi.org/v2/everything?q=Apple&from=2021-09-27&sortBy=popularity&apiKey=22078eb1d7814cf0aa3a473d715b1cec")
+    fetch("HTTPS://newsapi.org/v2/everything?q=Apple&from=2021-09-27&sortBy=popularity&apiKey=22078eb1d7814cf0aa3a473d715b1cec")
       .then(res => res.json())
       .then(data => setNews(data.articles))
   }, [])
